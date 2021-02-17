@@ -83,8 +83,24 @@
   animation: border-rotate-dx 1s linear infinite;
 }
 /* ESERCIZIO 13 TRANSIZIONE */
-@keyframes border-rotate {
-  0% {right:10%;}
-  50% {right: calc(100% - 60px);}
-  100% {right: 10%;}
+@keyframes border-rotate-sx-13 {
+  0% {left: 20%;top:-10px;}
+  30% {left: calc(100% - 30px); top: -30px;}
+  45% {left: calc(100% - 30px); top:100%;}
+  75% {left: 0; bottom: 100%;}
+  90% {left:-15px; top: -10px;}
+  100% {left: 20%; top: -10px;}
+}
+.ex-13-button .ex-13-top-white {
+  animation: border-rotate-sx-13 1s linear infinite;
+}
+@keyframes border-rotate-dx-13 {
+  0% {right: 20%;bottom: -10px;}
+  30% {right: calc(100% - 30px);bottom: -10px;}
+  45% {right: calc(100% - 30px); bottom: 100%;}
+  75% {right: -15px; bottom: 100%;}
+  100% {right: 20%;bottom: -10px}
+}
+.ex-13-button .ex-13-bottom-white {
+  animation: border-rotate-dx-13 1s linear infinite;
 }

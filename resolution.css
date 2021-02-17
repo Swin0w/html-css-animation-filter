@@ -32,10 +32,21 @@
   filter: grayscale(1);
 }
 /* ESERCIZIO 7 TRANSIZIONE*/
-.ex-7-img {
-  transition: 2s;
+.ex-7-img:hover {
+  filter: invert(1) sepia(1);
+  transition: 5s;
 }
-
-.ex-7-img:hover{
-  filter: blur(2) sepia(2);
+/* ESERCIZIO 8 TRANSIZIONE */
+.ex-8-img:hover {
+  filter: blur(1px) grayscale(1) blur(0);
+  border-radius: 20px;
+  transition: 5s;
 }
+/* ESERCIZIO 9 TRANSIZIONE */
+.ex-9-img:hover {
+  filter: grayscale(1) sepia(1);
+  border-radius: 10px;
+  transform: scale(1.2);
+  transition: 5s;
+}
+/* ESERCIZIO 10 TRANSIZIONE */

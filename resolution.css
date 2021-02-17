@@ -57,16 +57,34 @@
   animation: spin 1s linear infinite;
 }
 /* ESERCIZIO 11 TRANSIZIONE */
-@keyframes spin_1 {
+@keyframes littlespin {
   0% {transform: rotate(0);}
-  50% {transform: rotate(270deg);}
-}
-/* @keyframes spin-none {
+  75% {transform: rotate(270deg);}
   100% {transform: rotate(0);}
-} */
-.ex-11-icon:hover {
-  animation: spin_1 2s linear;
 }
 .ex-11-icon:hover {
-  animation-name: spin-none;
+  animation: littlespin 1s linear;
+}
+/* ESERCIZIO 12 TRANSIZIONE */
+@keyframes border-rotate-sx {
+  0% {left:10%;}
+  50% {left: calc(100% - 60px);}
+  100% {left: 10%;}
+}
+.ex-12-button .ex-12-top-white {
+  animation: border-rotate-sx 1s linear infinite;
+}
+@keyframes border-rotate-dx {
+  0% {right:10%;}
+  50% {right: calc(100% - 60px);}
+  100% {right: 10%;}
+}
+.ex-12-button .ex-12-bottom-white {
+  animation: border-rotate-dx 1s linear infinite;
+}
+/* ESERCIZIO 13 TRANSIZIONE */
+@keyframes border-rotate {
+  0% {right:10%;}
+  50% {right: calc(100% - 60px);}
+  100% {right: 10%;}
 }

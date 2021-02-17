@@ -50,8 +50,23 @@
   transition: 5s;
 }
 /* ESERCIZIO 10 TRANSIZIONE */
-.ex-10-icon:hover {
-  transform: rotate(360deg);
-  transition-duration: infinite;
+@keyframes spin {
+  0% {transform: rotate(360deg);}
 }
-/* ESERCIZIO 10 TRANSIZIONE */
+.ex-10-icon {
+  animation: spin 1s linear infinite;
+}
+/* ESERCIZIO 11 TRANSIZIONE */
+@keyframes spin_1 {
+  0% {transform: rotate(0);}
+  50% {transform: rotate(270deg);}
+}
+/* @keyframes spin-none {
+  100% {transform: rotate(0);}
+} */
+.ex-11-icon:hover {
+  animation: spin_1 2s linear;
+}
+.ex-11-icon:hover {
+  animation-name: spin-none;
+}

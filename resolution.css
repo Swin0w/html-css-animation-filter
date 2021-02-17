@@ -1,0 +1,41 @@
+/* ESERCIZIO 1 TRANSIZIONE */
+.ex-1-square:hover {
+  background-color: red;
+  transition: 2s
+}
+/* ESERCIZIO 2 TRANSIZIONE */
+.ex-2-square:active {
+  width: 100%;
+  transition: 4s;
+}
+/* ESERCIZIO 3 TRANSIZIONE */
+.ex-3-square:hover {
+  border-radius: 50%;
+  transition: 2s;
+}
+/* ESERCIZIO 4 TRANSIZIONE */
+.ex-4-square:hover {
+  transition: 2s;
+  opacity: 0;
+}
+/* ESERCIZIO 5 TRANSIZIONE */
+.ex-5-square:hover {
+  transform: scale(1.5);
+  transition: 2s;
+}
+.ex-5-square:active {
+  transform: scale(0.5);
+  transition: 2s;
+}
+/* ESERCIZIO 6 TRANSIZIONE */
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+/* ESERCIZIO 7 TRANSIZIONE*/
+.ex-7-img {
+  transition: 2s;
+}
+
+.ex-7-img:hover{
+  filter: blur(2) sepia(2);
+}

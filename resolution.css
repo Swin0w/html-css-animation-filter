@@ -50,3 +50,8 @@
   transition: 5s;
 }
 /* ESERCIZIO 10 TRANSIZIONE */
+.ex-10-icon:hover {
+  transform: rotate(360deg);
+  transition-duration: infinite;
+}
+/* ESERCIZIO 10 TRANSIZIONE */
